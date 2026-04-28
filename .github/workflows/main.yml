@@ -1,0 +1,12 @@
+name: Test HTML
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check HTML syntax
+        run: |
+          # This is a basic example; you can add real test scripts here
+          echo "Testing your website files..."
+          [ -f index.html ] && echo "index.html exists" || exit 1
