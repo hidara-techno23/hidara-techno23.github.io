@@ -1,7 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix | Professional Computer Repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Hello from Hidara Pages!</h1>
-  <p>My website is officially live.</p>
+    <nav>
+        <div class="logo">Tech<span>Fix</span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#book">Book Repair</a></li>
+            <li><a href="#" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Fast. Reliable. <br>PC Repair Services.</h1>
+        <p>Book your virtual or physical repair session in seconds.</p>
+        <a href="#book" class="cta">Start Booking</a>
+    </header>
+
+    <section id="book">
+        <div class="form-container">
+            <h2>Reserve Your Slot</h2>
+            <form action="https://formsubmit.co/adil.lme.2021@gmail.com" method="POST">
+                
+                <input type="text" name="_honey" style="display:none">
+                
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="customer_name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="email@example.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" name="repair_date" id="date" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" name="repair_time" id="time" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>Issue Details</label>
+                    <textarea name="message" placeholder="Describe the problem with your PC..." rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Confirm Appointment</button>
+            </form>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TechFix Repair Services. All rights reserved.</p>
+    </footer>
 </body>
 </html>
